@@ -1,74 +1,88 @@
-Sistema de Pedido – Lanchonete (Python)
+# 🍔 Sistema de Pedido – Lanchonete
 
-Este projeto é um sistema simples de pedidos para lanchonetes, desenvolvido em Python, que permite ao usuário escolher lanches e bebidas, calcular o total da compra, aplicar cupons de desconto e finalizar o pagamento.
+Sistema de pedidos para lanchonetes desenvolvido em **Python**, executado via terminal.
 
-Funcionalidades:
+O projeto simula o processo de realização de um pedido, desde a escolha dos produtos até o pagamento, incluindo cálculo de valores, descontos e troco.
 
-Exibe um cardápio com lanches e bebidas
+## 📋 Funcionalidades
 
-Permite escolher itens e quantidades
+* Exibição de cardápio com lanches e bebidas
+* Seleção de produtos e quantidades
+* Cálculo automático do subtotal
+* Aplicação de taxa de serviço de 10%
+* Aplicação de cupons de desconto:
 
-Calcula subtotal automaticamente
+  * `DESC10` → 10% de desconto
+  * `DESC20` → 20% de desconto
+  * `FRETEGRATIS` → 5% de desconto
+* Seleção da forma de pagamento:
 
-Aplica taxa de serviço de 10%
+  * Dinheiro
+  * PIX
+  * Cartão de débito
+  * Cartão de crédito
+* Cálculo de troco para pagamentos em dinheiro
+* Validação básica das entradas
+* Interface via terminal
 
-Aceita cupons de desconto
+## 🛠️ Tecnologias utilizadas
 
-DESC10 – 10%
+* **Python 3**
+* Biblioteca `time`
 
-DESC20 – 20%
+## 🚀 Como executar
 
-FRETEGRATIS – 5%
+### Pré-requisitos
 
-Permite escolher forma de pagamento
+Tenha o **Python 3** instalado em sua máquina.
 
-Dinheiro/PIX
+### Clone o repositório
 
-Cartão (débito/crédito)
+```bash
+git clone https://github.com/Thiago1702S/Sistema-Pedido-Lanchonete-Python.git
+```
 
-Calcula troco (quando necessário)
+Entre na pasta do projeto:
 
-Interface simples via terminal
+```bash
+cd Sistema-Pedido-Lanchonete-Python
+```
 
-Tecnologias Utilizadas:
+Execute o programa:
 
-Python 3
-
-Biblioteca: time (para pequenos delays)
-
-Como Executar:
-
-Certifique-se de ter o Python 3 instalado.
-
-Clone o repositório:
-
-git clone https://github.com/seu-usuario/seu-repo.git
-
-
-Execute o script:
-
+```bash
 python nome_do_arquivo.py
+```
 
-Estrutura do Código:
+> Substitua `nome_do_arquivo.py` pelo nome do arquivo principal do projeto.
 
-Cardápio organizado com dicionários
+## 🧩 Estrutura do código
 
-Laço while para controlar pedidos
+O projeto utiliza:
 
-Cálculo de subtotal, taxa de serviço e descontos
+* Dicionários para organização do cardápio
+* Estruturas de repetição `while` para controle dos pedidos
+* Cálculos de subtotal, taxa de serviço e descontos
+* Estruturas condicionais para regras de negócio
+* Simulação do processo de pagamento
+* Validação básica das entradas do usuário
 
-Simulação de pagamento
+## 💻 Exemplo de uso
 
-Validação de entradas básicas
+Durante a execução, o sistema apresenta informações sobre os itens adicionados ao pedido, por exemplo:
 
-Exemplo de Uso:
-
-O programa mostra o cardápio, permite a seleção de itens e mostra mensagens como:
-
+```text
 >>> 2x XBURGUER adicionado(s). Subtotal: R$ 40.00 <<<
+```
 
+Ao finalizar o pedido:
 
-E no final:
-
+```text
 TOTAL A PAGAR: R$ 55.00
-Pagamento aprovado! Obrigado pela preferência!
+Pagamento aprovado!
+Obrigado pela preferência!
+```
+
+## 🎯 Objetivo do projeto
+
+Projeto desenvolvido como prática de **programação em Python**, com foco em lógica de programação, estruturas de dados, controle de fluxo, validação de entradas e implementação de regras de negócio.
