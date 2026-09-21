@@ -1,40 +1,40 @@
 # 🍔 Sistema de Pedido – Lanchonete
 
-Sistema de pedidos para lanchonetes desenvolvido em **Python**, executado via terminal.
+Sistema simples de pedidos para lanchonetes desenvolvido em **Python**, executado via terminal.
 
-O projeto simula o processo de realização de um pedido, desde a escolha dos produtos até o pagamento, incluindo cálculo de valores, descontos e troco.
+O projeto simula o processo de realização de um pedido, permitindo selecionar produtos, informar quantidades, calcular valores, aplicar cupons de desconto e simular diferentes formas de pagamento.
 
 ## 📋 Funcionalidades
 
-* Exibição de cardápio com lanches e bebidas
-* Seleção de produtos e quantidades
-* Cálculo automático do subtotal
+* Exibição de cardápio de lanches e bebidas
+* Seleção de produtos por código
+* Definição da quantidade de cada produto
+* Cálculo do subtotal dos itens
 * Aplicação de taxa de serviço de 10%
 * Aplicação de cupons de desconto:
 
-  * `DESC10` → 10% de desconto
-  * `DESC20` → 20% de desconto
-  * `FRETEGRATIS` → 5% de desconto
-* Seleção da forma de pagamento:
+  * `DESC10` → 10%
+  * `DESC20` → 20%
+  * `FRETEGRATIS` → 5%
+* Escolha da forma de pagamento:
 
-  * Dinheiro
-  * PIX
+  * Dinheiro / PIX
   * Cartão de débito
   * Cartão de crédito
-* Cálculo de troco para pagamentos em dinheiro
-* Validação básica das entradas
+* Cálculo de troco
+* Mensagens de confirmação e finalização do pedido
 * Interface via terminal
 
 ## 🛠️ Tecnologias utilizadas
 
 * **Python 3**
-* Biblioteca `time`
+* Biblioteca padrão `time`
 
 ## 🚀 Como executar
 
-### Pré-requisitos
+### Pré-requisito
 
-Tenha o **Python 3** instalado em sua máquina.
+É necessário ter o **Python 3** instalado.
 
 ### Clone o repositório
 
@@ -42,13 +42,13 @@ Tenha o **Python 3** instalado em sua máquina.
 git clone https://github.com/Thiago1702S/Sistema-Pedido-Lanchonete-Python.git
 ```
 
-Entre na pasta do projeto:
+Entre na pasta:
 
 ```bash
 cd Sistema-Pedido-Lanchonete-Python
 ```
 
-Execute o programa:
+Execute o arquivo Python:
 
 ```bash
 python nome_do_arquivo.py
@@ -56,33 +56,31 @@ python nome_do_arquivo.py
 
 > Substitua `nome_do_arquivo.py` pelo nome do arquivo principal do projeto.
 
-## 🧩 Estrutura do código
+## 🧩 Conceitos praticados
 
-O projeto utiliza:
+O projeto utiliza conceitos fundamentais de programação, como:
 
-* Dicionários para organização do cardápio
-* Estruturas de repetição `while` para controle dos pedidos
-* Cálculos de subtotal, taxa de serviço e descontos
-* Estruturas condicionais para regras de negócio
-* Simulação do processo de pagamento
-* Validação básica das entradas do usuário
+* Variáveis e tipos de dados
+* Dicionários
+* Estruturas condicionais `if / else`
+* Estrutura de repetição `while`
+* Entrada e saída de dados
+* Operações matemáticas
+* Formatação de valores
+* Manipulação de strings
+* Validação básica de opções
+* Simulação de regras de negócio
 
-## 💻 Exemplo de uso
+## 💻 Exemplo de execução
 
-Durante a execução, o sistema apresenta informações sobre os itens adicionados ao pedido, por exemplo:
+Ao adicionar um produto, o sistema apresenta uma mensagem semelhante a:
 
 ```text
 >>> 2x XBURGUER adicionado(s). Subtotal: R$ 40.00 <<<
 ```
 
-Ao finalizar o pedido:
-
-```text
-TOTAL A PAGAR: R$ 55.00
-Pagamento aprovado!
-Obrigado pela preferência!
-```
+Ao finalizar o pedido, o sistema apresenta o resumo e solicita a forma de pagamento.
 
 ## 🎯 Objetivo do projeto
 
-Projeto desenvolvido como prática de **programação em Python**, com foco em lógica de programação, estruturas de dados, controle de fluxo, validação de entradas e implementação de regras de negócio.
+Projeto desenvolvido como prática de **Python e lógica de programação**, com foco na utilização de estruturas de controle, dicionários, operações matemáticas, entrada de dados e implementação de regras simples de negócio.
