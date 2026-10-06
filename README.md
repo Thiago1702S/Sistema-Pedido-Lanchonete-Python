@@ -51,10 +51,8 @@ cd Sistema-Pedido-Lanchonete-Python
 Execute o arquivo Python:
 
 ```bash
-python nome_do_arquivo.py
+python main.py
 ```
-
-> Substitua `nome_do_arquivo.py` pelo nome do arquivo principal do projeto.
 
 ## 🧩 Conceitos praticados
 
